@@ -7,14 +7,13 @@
       "context": "browser",
       "source": "src/index.html",
       "distDir": "dist",
-      "sourceMap": false,
-      "outputFormat": "esmodule",
-      "publicUrl": "src/assets"
+      "sourceMap": true,
+      "outputFormat": "esmodule"
     }
   },
   "scripts": {
     "serve": "parcel serve",
-    "build": "(rmdir /s /q dist) & parcel build"
+    "build": "(rmdir /s /q dist) & parcel build --no-source-maps"
   },
   "browserslist": [
     "defaults and supports es6-module",
